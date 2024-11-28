@@ -3,10 +3,8 @@ import Image from "next/image";
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
-import { HiArrowUpRight } from "react-icons/hi2";
 import { CloseIcon } from "./CloseIcon";
-import Card from "./Card";
-// import Card from "./Card";
+
 
 
 const Cards =[
@@ -32,7 +30,7 @@ const Cards =[
         content: () => {
             return (
               <p>
-               This is an interactive resume builder where you can input your details and generate a personalized resume. Built using HTML, CSS, and JavaScript, it allows you to change the resume's color, download it as a PDF, and share it via a unique link after creation. This project showcases my skills in building dynamic, user-friendly applications.
+               This is an interactive resume builder where you can input your details and generate a personalized resume. Built using HTML, CSS, and JavaScript, it allows you to change the resume&apos;s color, download it as a PDF, and share it via a unique link after creation. This project showcases my skills in building dynamic, user-friendly applications.
               </p>
             );
           },

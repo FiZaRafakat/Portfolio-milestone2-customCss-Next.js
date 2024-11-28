@@ -9,6 +9,7 @@ import { BiLogoLinkedin } from 'react-icons/bi';
 import { Button } from './ui/moving-border';
 import AOS from "aos"
 import "aos/dist/aos.css"
+/* eslint-disable @next/next/no-img-element */
 
 const Hero = () => {
 
@@ -119,7 +120,7 @@ useEffect(() => {
   }, 4000); 
 
   return () => clearInterval(jobTimer);
-}, []);
+}, [jobTitles.length]);
 
 
 const scrollToServices = () => {
