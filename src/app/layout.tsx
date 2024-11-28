@@ -1,6 +1,16 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/header";
+import { Merienda } from "next/font/google";
+import Footer from "@/components/Footer";
+
+
+const merienda = Merienda({
+  weight:['400'],
+  subsets : ['latin'],
+  variable : '--font-merienda'
+})
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +25,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className={`${merienda.variable}`}>
+      <body className="text-white font-merienda" style={{backgroundColor : "#517664" }}
+      >
+        <Header />
+        {children}
+        <Footer />
+        </body>
     </html>
   );
 }
